@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
 
-from didikala import settings
+from core import settings
 from django.conf.urls.static import static
 
-from didikala.views import home_page, header, footer
+from core.views import home_page, header, footer
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
