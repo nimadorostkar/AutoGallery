@@ -1,3 +1,3 @@
-# Didikala
+# Auto Gallery
 
-E-commerce website like Digikala with Django framework
+Auto Gallery website with Django framework
