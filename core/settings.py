@@ -63,7 +63,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'didikala.urls'
+ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
     {
@@ -87,7 +87,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'didikala.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 #DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'
