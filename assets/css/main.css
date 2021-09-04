@@ -432,7 +432,8 @@ header.main-header .logo-area a {
 }
 
 header.main-header .search-area {
-    margin: 5px;
+    margin: 4px;
+
 }
 
 header.main-header .search-area form.search {
