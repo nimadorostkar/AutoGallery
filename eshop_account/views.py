@@ -34,7 +34,7 @@ def login_user(request):
             login(request, user)
             # redirect to next page after login or home page
             request.session['variantid'] = request.POST
-            return HttpResponseRedirect(request.GET.get('next', reverse('home')))
+            return HttpResponseRedirect(request.GET.get('next', reverse('gallery')))
         else:
             form.add_error('username', 'نام کاربری یا رمز عبور اشتباه می‌باشد!!')
     return render(request, 'account/login.html', context)
@@ -42,7 +42,7 @@ def login_user(request):
 
 def register(request):
     if request.user.is_authenticated:
-        return redirect('/')
+        return redirect('/gallery')
     register_form = RegisterForm(request.POST or None)
     if register_form.is_valid():
         username = register_form.cleaned_data.get('username')
