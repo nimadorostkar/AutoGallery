@@ -4,7 +4,7 @@ from django.urls import path, include
 from core import settings
 from django.conf.urls.static import static
 
-from core.views import home_page, header, footer
+from core.views import home_page, header, footer, index
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
@@ -28,7 +28,8 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('header', header, name="header"),
     path('footer', footer, name="footer"),
-    path('', home_page, name='home'),
+    path('gallery', home_page, name='gallery'),
+    path('', index, name='home'),
 
     path('', include('eshop_account.urls')),
     path('', include('eshop_contact.urls')),

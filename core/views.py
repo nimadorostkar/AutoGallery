@@ -72,3 +72,9 @@ def home_page(request):
         'all_barand': all_barand,
     }
     return render(request, 'home_page.html', context)
+
+
+
+def index(request):
+    context = {}
+    return render(request, 'index.html', context)
